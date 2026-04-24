@@ -1,0 +1,11 @@
+Revenu,Age,Ratio_Endettement,Nombre_Credits,Montant_Credit,Type_Emploi,Secteur_Activite,Statut_Familial,Target
+50000,30,0.3,2,10000,CDI,Finance,Marie,0
+60000,45,0.5,1,20000,CDD,Tech,Celibataire,1
+30000,25,0.2,3,5000,CDI,Retail,Marie,0
+80000,50,0.6,2,30000,Independant,Finance,Celibataire,1
+45000,35,0.4,1,15000,CDI,Tech,Marie,0
+70000,40,0.45,2,25000,CDI,Retail,Celibataire,0
+35000,28,0.25,3,7000,CDD,Finance,Marie,1
+90000,55,0.7,1,40000,Independant,Tech,Celibataire,1
+55000,32,0.35,2,18000,CDI,Retail,Marie,0
+40000,48,0.55,1,22000,CDD,Finance,Celibataire,1
