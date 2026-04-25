@@ -7,7 +7,7 @@ import joblib
 import os
 
 # Importer les fonctions de data_preprocessing.py
-from src.data_preprocessing import load_data, create_preprocessing_pipeline
+from .data_preprocessing import load_data, create_preprocessing_pipeline
 
 def train_and_save_model(data_path, model_output_path):
     """
@@ -49,6 +49,7 @@ def train_and_save_model(data_path, model_output_path):
     auc_score = roc_auc_score(y_test, y_pred_proba)
     print(f"Score AUC du modèle : {auc_score:.4f}")
 
+    os.makedirs(os.path.dirname(model_output_path), exist_ok=True)
     print(f"Sauvegarde du modèle entraîné dans {model_output_path}...")
     joblib.dump(model_pipeline, model_output_path)
     print("Modèle sauvegardé avec succès.")
@@ -56,7 +57,7 @@ def train_and_save_model(data_path, model_output_path):
 if __name__ == '__main__':
     # Définir les chemins
     DATA_FILE_PATH = 'data/raw/dataset_scoring_credit_900k.csv'
-    MODEL_SAVE_PATH = 'models/best_credit_scoring_model.joblib'
+    MODEL_SAVE_PATH = 'models/best_credit_scoring_model.pkl'
 
     # Toujours créer un jeu de données factice à des fins de test
     print(f"Création/Écrasement d'un jeu de données factice à {DATA_FILE_PATH} pour les tests...")
