@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python/
+env/
+venv/
+*.egg-info/
+.tox/
+.ipynb_checkpoints/
+
+# IDEs
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+.Trashes
+Thumbs.db
+
+# Specific to this project
+models/*.joblib # Ignore trained models
+data/raw/*.csv # Ignore raw data if it's large and shouldn't be versioned
